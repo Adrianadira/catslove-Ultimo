@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Adriana Diaz, Daniela Mafla">
+    <title>Cats Love</title>
+    <!-- Libreria Fontawesome para iconos -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <!-- Libreria Estilos Css -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <!-- Libreria Css Bootstrap 5.3 -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Inicio de la cabecera -->
+    <header data-bs-theme="dark">
+        <!-- Inicio barra de navegación -->
+        <nav class="navbar navbar-expand-md fixed-top bg-nativo">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html"><img src="imagenes/logo.jpg" class="img-fluid img-responsive w-25"><span class="titulo d-inline fs-1 ps-3">Cats Love</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- Menu principal -->
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos" aria-disabled="true">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto" aria-disabled="true">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <!-- Menu usuarios -->
+                    <ul class="navbar-nav mb-2 mb-md-0">
+                        <li class="nav-item ms-5">
+                            <a class="nav-link" href="login.html" aria-disabled="true">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registrarse.html" aria-disabled="true">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Inicio Carrusel Slider -->
+        <div id="slider" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Imagen 1 -->
+                <div class="carousel-item active">
+                    <img src="imagenes/slide-3.jpg" class="img-fluid img-responsive w-100">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1 class="titulo titulo-carrusel">Bienvenido cat lover</h1>
+                            <p></p>
+                            <p><a class="btn btn-lg btn-primary btn-nativo" href="#productos">Ver mas</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="carousel-item">
+                    <img src="imagenes/slide-1.jpg" class="img-fluid img-responsive w-100">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 class="titulo titulo-carrusel">La felicidad incluye un peludo</h1>
+                            <p></p>
+                            <p><a class="btn btn-lg btn-primary btn-nativo" href="#productos">Ver mas</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen 3 -->
+                <div class="carousel-item">
+                    <img src="imagenes/slide-2.jpg" class="d-block w-100 img-fluid img-responsive">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 class="titulo titulo-carrusel">Mi cafe favorito es el de tus ojitos</h1>
+                            <p class="opacity-75"></p>
+                            <p><a class="btn btn-lg btn-primary btn-nativo" href="#productos">Ver mas</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Botones Proximo y Previo -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Fin Carrusel Slider -->
+        <!-- Inicio Seccion Nosotros -->
+        <div id="nosotros" class="container nosotros">
+            <div id="nosotros" class="row my-5 py-3">
+                <div class="col-md-7">
+                    <!-- Titulo Nosotros -->
+                    <h2 class="featurette-heading fw-normal lh-1 fs-1">Sobre Nosotros</h2>
+                    <span class="text-body-secondary"></span>
+                    <!-- Texto Nosotros -->
+                    <p class="lead">Somos un emprendimiento dedicado al diseño personalizado de productos con un toque de amor inspirado en tus  peludos, creado en 2019 como forma de trabajo virtual en pandemia, al tiempo que compartimos al mundo el amor por nuestras mascotas, queremos que te sientas feliz de llevarlas en tus accesorios , ser la mejor opción para un regalo o para llevar en el día a día, siempre con el toque personalizado que tú le quieras dar ,tenemos las mejores referencias de nuestros clientes y nos motivamos por aprender e implementar nuevas ideas que  nos lleven a crecer como negocio.</p>
+                </div>
+                <!-- Imagen nosotros seccion lateral derecha -->
+                <div class="col-md-5">
+                    <img src="imagenes/nosotros 1.jpg" class="img-rounded d-block w-100 img-fluid img-responsive">
+                </div>
+            </div>
+        </div>
+        <!-- /Fin Seccion Nosotros -->
+
+        <!-- Inicio Banner Gatitos -->
+        <div id="gatitos" class="fondo-gatitos py-5"><!-- Imagen de fondo gatitos -->
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 py-5 order-md-2 text-center bgt-white">
+                        <h2 class="fw-bolder lh-1 titulo-carrusel">Lenguaje del amor</h2>
+                        <span class="fs-1">Si tu gato te amasa</span>
+                        <p class="lead fs-1">eres su lugar favorito y seguro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Fin Banner Gatitos -->
+
+        <!-- Inicio Seccion Productos -->
+        <div class="container">
+            <div id="productos" class="row mb-5 pb-5">
+                <div class="col-md-12 text-center">
+                    <!-- Titulo Seccion Productos -->
+                    <h2 class="fw-normal py-5 mb-5 fs-1">Nuestros Productos</h2>
+                    <div id="products" class="row"><!-- Fila 3 productos -->
+                        <!--  Inicio tarjeta producto -->
+                        <div class="item col-lg-4 px-5">
+                            <!-- Imagen encabezado producto -->
+                            <img class="d-block w-100 img-fluid img-responsive" src="imagenes/diseño-1.png" alt="" />
+                            <div class="border">
+                                <!-- Nombre Producto -->
+                                <h4 class="py-3 mt-2">
+                                    Mugs</h4>
+                                <!-- Descripción producto -->
+                                <p class="pb-3">
+                                    Cat Mugs Nuestros Cat-mugs están hechos en cerámica y están diseñados para sublimar ideas gatunas con el asesoramiento previo.</p>
+                                <div class="row">
+                                    <!-- Precio Producto -->
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="fs-3">
+                                            $25.000</p>
+                                    </div>
+                                    <!-- Boton comprar producto -->
+                                    <div class="col-xs-12 col-md-6">
+                                        <p><a class="btn btn-lg btn-primary btn-nativo" href="#">Comprar</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin tarjeta producto -->
+                        <!--  Inicio tarjeta producto -->
+                        <div class="item col-lg-4 px-5">
+                            <img class="d-block w-100 img-fluid img-responsive" src="imagenes/Camiseta-1-2.png" alt="" />
+                            <div class="border">
+                                <h4 class="py-3 mt-2">
+                                    Camisetas</h4>
+                                <p class="pb-3">
+                                    Nuestras camisetas están hechas en material piel de durazno adecuadas para los estampados personalizados.   </p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="fs-3">
+                                            $35.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p><a class="btn btn-lg btn-primary btn-nativo" href="#">Comprar</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin tarjeta producto -->
+                        <!--  Inicio tarjeta producto -->
+                        <div class="item col-lg-4 px-5">
+                            <img class="d-block w-100 img-fluid img-responsive" src="imagenes/Libreta-1-2.jpg" alt="" />
+                            <div class="border">
+                                <h4 class="py-3 mt-2">
+                                    libretas</h4>
+                                <p class="pb-3">
+                                   Nuestras libretas las puedes personalizar en las dos tapas puedes seleccionar el tipos de hojas, calendario y cantidad de páginas. </p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="fs-3">
+                                            $25.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p><a class="btn btn-lg btn-primary btn-nativo" href="#">Comprar</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin tarjeta producto -->
+                    </div>
+                    <div id="products" class="row pt-5"><!-- Fila 3 productos -->
+                        <!--  Inicio tarjeta producto -->
+                        <div class="item col-lg-4 px-5">
+                            <img class="d-block w-100 img-fluid img-responsive" src="imagenes/padmouse-1.png" alt="" />
+                            <div class="border">
+                                <h4 class="py-3 mt-2">
+                                    Pad mouse</h4>
+                                <p class="pb-3">
+                                    Nuestros pad mouse están hechos de neopreno antideslizante y diseñados para la impresión adecuada sobre la tela y resistencia en la limpieza del mismo.   </p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="fs-3">
+                                            $15.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p><a class="btn btn-lg btn-primary btn-nativo" href="#">Comprar</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin tarjeta producto -->
+                        <!--  Inicio tarjeta producto -->
+                        <div class="item col-lg-4 px-5">
+                            <img class="d-block w-100 img-fluid img-responsive" src="imagenes/diseño-2.png" alt="" />
+                            <div class="border">
+                                <h4 class="py-3 mt-2">
+                                    Mug </h4>
+                                <p class="pb-3">
+                                    Nuestros Cat-mugs están hechos en cerámica y están diseñados para sublimar ideas gatunas con el asesoramiento previo.</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="fs-3">
+                                            $25.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p><a class="btn btn-lg btn-primary btn-nativo" href="#">Comprar</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin tarjeta producto -->
+                        <!--  Inicio tarjeta producto -->
+                        <div class="item col-lg-4 px-5">
+                            <img class="d-block w-100 img-fluid img-responsive" src="imagenes/camiseta2-2.jpg" alt="" />
+                            <div class="border">
+                                <h4 class="py-3 mt-2">
+                                    Camisetas</h4>
+                                <p class="pb-3">
+                                    Nuestras camisetas están hechas en material piel de durazno adecuadas para los estampados personalizados. </p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="fs-3">
+                                            $28.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p><a class="btn btn-lg btn-primary btn-nativo" href="#">Comprar</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin tarjeta producto -->
+                    </div>
+                    <div id="products" class="row pt-5"><!-- Fila 3 productos -->
+                        <!--  Inicio tarjeta producto -->
+                        <div class="item col-lg-4 px-5">
+                            <img class="d-block w-100 img-fluid img-responsive" src="imagenes/padmouse-2.png" alt="" />
+                            <div class="border">
+                                <h4 class="py-3 mt-2">
+                                    Pad mouse</h4>
+                                <p class="pb-3">
+                                    Nuestros pad mouse están hechos de neopreno antideslizante y diseñados para la impresión adecuada sobre la tela y resistencia en la limpieza del mismo.  </p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="fs-3">
+                                            $15.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p><a class="btn btn-lg btn-primary btn-nativo" href="#">Comprar</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin tarjeta producto -->
+                        <!--  Inicio tarjeta producto -->
+                        <div class="item col-lg-4 px-5">
+                            <img class="d-block w-100 img-fluid img-responsive" src="imagenes/diseño-3.png" alt="" />
+                            <div class="border">
+                                <h4 class="py-3 mt-2">
+                                    Mug</h4>
+                                <p class="pb-3">
+                                    Nuestros Cat-mugs están hechos en cerámica y están diseñados para sublimar ideas gatunas con el asesoramiento previo.</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="fs-3">
+                                            $25.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p><a class="btn btn-lg btn-primary btn-nativo" href="#">Comprar</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin tarjeta producto -->
+                        <!--  Inicio tarjeta producto -->
+                        <div class="item col-lg-4 px-5">
+                            <img class="d-block w-100 img-fluid img-responsive" src="imagenes/padmouse-3-1.jpg" alt="" />
+                            <div class="border">
+                                <h4 class="py-3 mt-2">
+                                    Pad mouse</h4>
+                                <p class="pb-3">
+                                    Nuestros pad mouse están hechos de neopreno antideslizante y diseñados para la impresión adecuada sobre la tela y resistencia en la limpieza del mismo.</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="fs-3">
+                                            $15.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p><a class="btn btn-lg btn-primary btn-nativo" href="#">Comprar</a></p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin tarjeta producto -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Fin Seccion Productos -->
+
+        <!-- Inicio Seccion Contactenos -->
+        <div class="container">
+            <div id="contacto" class="row mb-5 pb-5">
+                <div class="col-md-12 text-center">
+                    <!-- Titulo Contactenos -->
+                    <h2 class="fw-normal pt-5 mb-3 fs-1">Formulario de adopción</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <!-- Formulario Contactenos -->
+                            <form action="enviar_correo.php" method="post">
+                                <div class="row text-start">
+                                    <div class="col-md-6 pt-2">
+                                        <label for="nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                                    </div>
+                                    <div class="col-md-6 pt-2">
+                                        <label for="telefono" class="form-label">Teléfono</label>
+                                        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
+                                    </div>
+                                    <div class="col-md-12 pt-2">
+                                        <label for="correo" class="form-label">Correo</label>
+                                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" required>
+                                    </div>
+                                    <div class="col-12 pt-2">
+                                        <label for="mensaje" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12 pt-2">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-dark w-100 fw-bold" >Enviar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Fin Seccion Contactenos -->
+        <!-- Inicio Seccion video -->
+        <div class="container">
+            <div id="video" class="row mb-5 pb-5">
+                <div class="col-md-12 text-center">
+                    <iframe class="video" width="300" height="400" src="https://www.youtube.com/embed/vtLCyX_BbiE" title="🐱 GATOTERAPIA o terapia psicológica en gatos: Qué es, cómo funciona y beneficios 👨‍⚕️🐱" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- /Fin Seccion video -->
+        <!-- FOOTER -->
+        <footer class="row mt-5 py-5 bg-footer bg-nativo text-center">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 pb-0">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <span class="ms-lg-5 pb-4 pt-2 fs-4">Contáctanos</span>
+                        <p class="pt-3 text-gray f-7 ms-lg-5"><i class="fas fa-map-marker-alt text-nativo me-2"></i> Bogotá - Colombia</p>
+                        <p class="text-gray f-7 ms-lg-5"><i class="fas fa-envelope text-success me-2"></i>info@catslove.com</p>
+                    </div>
+                    <div class="col-lg-4 float-start">
+                        <p class="pb-2 pt-2 fs-4">Siguenos en</p>
+                        <a href="" target="_blank"><i class="text-success mx-1 fs-1 fab fa-facebook-square"></i></a>
+                        <a href="" target="_blank"><i class="text-success mx-1 fs-1 fab fa-twitter-square"></i></a>
+                        <a href="" target="_blank"><i class="text-success mx-1 fs-1 fab fa-instagram-square"></i></a>
+                        <a href="" target="_blank"><i class="text-success mx-1 fs-1 fab fa-youtube-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Fin FOOTER -->
+    </main>
+    <!-- Js para bootstrap 5.3 -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
